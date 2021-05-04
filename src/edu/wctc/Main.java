@@ -18,11 +18,10 @@ public class Main {
         Command color = new ChangeColorCommand(light, "Blue");
 
         Command romanticDinner = new Macro(
-                new Command[]{
-                        new LightOnCommand(light),
-                        new DimLightCommand(light),
-                        new ChangeColorCommand(light, "Red")
-                });
+                new LightOnCommand(light),
+                new DimLightCommand(light),
+                new ChangeColorCommand(light, "Red")
+        );
 
         Remote remote = new Remote();
         remote.setButtonA(romanticDinner);

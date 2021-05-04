@@ -7,7 +7,7 @@ public class Macro implements Command {
 
     private Command[] commands;
 
-    public Macro(Command[] commands) {
+    public Macro(Command... commands) {
         this.commands = commands;
     }
 
